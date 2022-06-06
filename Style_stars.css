@@ -1,0 +1,37 @@
+body{
+  background-image: url('images/tumblr_stars.gif'); /* this is a temp standin until I can make a real star gif */
+  background-attachment: scroll;
+  background-size: auto;
+  background-repeat: repeat;
+  height: 100%; /* this is the first height call, every other following "100%" will fit seamlessly to the body's 100%. */
+}
+header{
+  /* margin-top: 165px; */
+  color: white;
+  padding-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: helvetica;
+  position: relative;
+  z-index: 3;
+}
+p{
+  color: white;
+  margin-top: 25px;
+  margin-left: 32%;
+  margin-right: 32%;
+  text-align: left;
+  font-family: helvetica;
+  position: relative;
+  z-index: 2;
+  border-style: none, none, none, double;
+}
+.svgelem{
+  /* margin-left being 29%, right idea but wrong element. */
+   /* margin-left: 29%; */
+   /* margin-right: auto; */
+   display: block;
+   position: absolute;
+   z-index: 1;
+}
