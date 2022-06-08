@@ -35,3 +35,6 @@ p{
    position: absolute;
    z-index: 1;
 }
+.content{
+  height: inherit;
+}
