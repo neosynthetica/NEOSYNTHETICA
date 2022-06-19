@@ -49,3 +49,7 @@ p{
 .content{
   height: inherit;
 }
+.footerelem{
+  margin-bottom: 25px;
+  position: relative;
+}
