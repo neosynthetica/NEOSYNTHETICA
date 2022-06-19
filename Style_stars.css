@@ -27,6 +27,17 @@ p{
   z-index: 2;
   border-style: none, none, none, double;
 }
+.copy{
+  color: white;
+  margin-top: 25px;
+  margin-left: 32%;
+  margin-right: 32%;
+  text-align: left;
+  font-family: helvetica;
+  position: relative;
+  z-index: 2;
+  border-style: none, none, none, double;
+}
 .svgelem{
   /* margin-left being 29%, right idea but wrong element. */
    /* margin-left: 29%; */
