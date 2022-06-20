@@ -1,8 +1,5 @@
 body{
-  background-image: url('images/tumblr_stars.gif'); /* this is a temp standin until I can make a real star gif */
-  background-attachment: scroll;
-  background-size: auto;
-  background-repeat: repeat;
+  background-color: rgb(115, 115, 115);
   height: 100%; /* this is the first height call, every other following "100%" will fit seamlessly to the body's 100%. */
 }
 header{
