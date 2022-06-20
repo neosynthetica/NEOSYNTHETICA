@@ -1,2 +1,2 @@
-# NEOSYNTHETICA
-The website for ME!
+# NEOSYNTHETICA.COM
+THis website is an ongoing project, where I can push my understanding of web design, and make a portfolio at the same time !
