@@ -1,0 +1,37 @@
+header{
+  /* margin-top: 165px; */
+  color: white;
+  padding-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: helvetica;
+  position: relative;
+  z-index: 3;
+}
+p{
+  color: white;
+  margin-top: 25px;
+  margin-left: 32%;
+  margin-right: 32%;
+  text-align: left;
+  font-family: helvetica;
+  position: relative;
+  z-index: 2;
+  border-style: none, none, none, double;
+}
+.copy{
+  color: white;
+  margin-top: 25px;
+  margin-left: 32%;
+  margin-right: 32%;
+  text-align: left;
+  font-family: helvetica;
+  position: relative;
+  z-index: 2;
+  border-style: none, none, none, double;
+}
+.footerelem{
+  margin-bottom: 25px;
+  position: relative;
+}
