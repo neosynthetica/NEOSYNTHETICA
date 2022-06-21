@@ -4,6 +4,7 @@ header{
   padding-top: 30px;
   margin-left: auto;
   margin-right: auto;
+  display: block;
   text-align: center;
   font-family: helvetica;
   position: relative;
@@ -12,8 +13,9 @@ header{
 p{
   color: white;
   margin-top: 25px;
-  margin-left: 32%;
-  margin-right: 32%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
   text-align: left;
   font-family: helvetica;
   position: relative;
@@ -23,13 +25,13 @@ p{
 .copy{
   color: white;
   margin-top: 25px;
-  margin-left: 32%;
-  margin-right: 32%;
-  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
   font-family: helvetica;
   position: relative;
   z-index: 2;
-  border-style: none, none, none, double;
 }
 .footerelem{
   margin-bottom: 25px;
