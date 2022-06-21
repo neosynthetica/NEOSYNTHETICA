@@ -6,6 +6,24 @@
       <link rel="shortcut icon" type="image/png" href="IMAGES/favicon_temp.png"> <!-- réparer-le! -->
       <link rel="stylesheet" href="style_stimple.css">
       <link rel="stylesheet" href="text_stimple.css">
+      <style>
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      </style>
     </head>
     <body>
       <ul>
@@ -18,18 +36,23 @@
           Quel est votre langue ?
         </header>
         <ul class="copy" style="list-style-type:none"> <!-- Ces sont langues théoriques ! Je n'ai pas ces langues.... -->
-          <li>Français</li>
-          <li>汉语</li>
-          <li>日本語</li>
-          <li>Reo Māori</li>
-          <li>English</li>
+          <li><a href="">Français</a></li>
+          <li><a href="">汉语</a></li>
+          <li><a href="">日本語</a></li>
+          <li><a href="">Reo Māori</a></li>
+          <li><a href="">English</a></li>
         </ul> <!-- réparer-le! -->
         <header>
           Pour votre confort
         </header>
         <ul class="copy" style="list-style-type:none">
-          <li>Mode dyslexie gentille</li> <!-- dyslexia frendly mode -->
-          <li>Mode daltonienne</li> <!-- colourblind mode -->
+          <li class="dropdown"><span>Mode daltonienne</span> <!-- colour blind mode -->
+            <div class="dropdown-content">
+              <p><a href="">Red-Green</a></p> <!--Deuteranomaly, Protanomaly, Protanopia, deuteranopia. Avoid red and green because they are useless colours here ! -->
+              <p><a href="">Blue-Yellow</a></p> <!-- Tritanomaly, Tritanopia. Idk man, no colours are safe with this one -->
+              <p><a href="">Monochromacy</a></p> <!-- No such thing as colour, use cool patterns instead. -->
+            </div></li> <!-- dyslexia frendly mode -->
+          <li><a href="">Mode dyslexie gentille</li> <!-- dyslexia friendly mode -->
         </ul> <!-- réparer-le! -->
       </div>
     </body>
