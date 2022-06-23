@@ -33,14 +33,16 @@
       <!-- having width and height in html and css is a bad idea, so I removed it <3 -->
       <div class="content">
         <header>
-          <embed class="copy" src="TEXT/en/whatLang.html" width="50%" height="60px">
+          <div id="langQ" class="copy"></div>
         </header>
-        <ul class="copy" style="list-style-type:none"> <!-- Ces sont langues théoriques ! Je n'ai pas ces langues.... -->
-          <li><button type="button" onclick="french()">Français</button></li>
+        <ul class="copy" style="list-style-type:none"> <!-- Ces sont langues théoriques ! Je n'ai pas tout de ces langues.... -->
+          <li><a href="#" onclick="setLanguage('fr')">Français</a></li>
+          <!--
           <li><button type="button" onclick="chinese()">汉语</button></li>
           <li><button type="button" onclick="japanese()">日本語</button></li>
           <li><button type="button" onclick="maori()">Reo Māori</button></li>
-          <li><button type="button" onclick="english()">English</button></li>
+          -->
+          <li><a href="#" onclick="setLanguage(en)">English</a></li>
         </ul> <!-- réparer-le! -->
         <header>
           <embed class="copy" src="TEXT/en/comfortHead.html" width="50%" height="60px">
@@ -56,20 +58,21 @@
         </ul> <!-- réparer-le! -->
       </div>
       <script>
-      function french() {
-        document.getElementById("lang").lang = "fr";
+      var language;
+      function getLanguage() {
+      (localStorage.getItem('language') == null) ? setLanguage('en') : false;
+      $.ajax({
+      url:  '/language/' +  localStorage.getItem('language') + '.json',
+      dataType: 'json', async: false, dataType: 'json',
+      success: function (lang) { language = lang } });
       }
-      function chinese() {
-        document.getElementById("lang").lang = "zh";
-      }
-      function japanese() {
-        document.getElementById("lang").lang = "ja";
-      }
-      function maori() {
-        document.getElementById("lang").lang = "mi";
-      }
-      function english() {
-        document.getElementById("lang").lang = "en";
+
+      function setLanguage(lang) {
+      localStorage.setItem('language', lang);
+
+      $(document).ready(function(){
+      $('#langQ').text(language.whatLanguage);
+      });
       }
       </script>
     </body>
