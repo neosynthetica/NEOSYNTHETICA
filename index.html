@@ -1,5 +1,5 @@
 <doctype HTML>
-  <html id="lang" lang="fr" dir="ltr">
+  <html lang="fr" dir="ltr">
     <head>
       <meta charset="utf-8" name="viewport" content="width=device-width", initial-scale="1.0">
       <title>Bienvenue!</title>
@@ -45,19 +45,19 @@
           <li><a href="#" onclick="setLanguage(en)">English</a></li>
         </ul> <!-- réparer-le! -->
         <header>
-          <embed class="copy" src="TEXT/en/comfortHead.html" width="50%" height="60px">
+          <div id="comf" class="copy"></div>
         </header>
         <ul class="copy" style="list-style-type:none">
-          <li class="dropdown"><span><embed class="copy" src="TEXT/en/colourBlind.html" width="55%" height="60px"></span> <!-- colour blind mode -->
+          <li class="dropdown"><span><div id="cb" class="copy"></div></span> <!-- colour blind mode -->
             <div class="dropdown-content">
-              <p><a href=""><embed class="copy" src="TEXT/en/redGreen.html" width="50%" height="60px"></a></p> <!-- (Red-green) Deuteranomaly, Protanomaly, Protanopia, deuteranopia. Avoid red and green because they are useless colours here ! -->
-              <p><a href=""><embed class="copy" src="TEXT/en/blueYellow.html" width="50%" height="60px"></a></p> <!-- (Blue-yellow) Tritanomaly, Tritanopia. Idk man, no colours are safe with this one -->
-              <p><a href=""><embed class="copy" src="TEXT/en/monochromacy.html" width="50%" height="60px"></a></p> <!-- (Monochromacy) No such thing as colour, use cool patterns instead. -->
+              <p><a href=""><div id="RG" class="copy"></div></a></p> <!-- (Red-green) Deuteranomaly, Protanomaly, Protanopia, deuteranopia. Avoid red and green because they are useless colours here ! -->
+              <p><a href=""><div id="BY" class="copy"></a></p> <!-- (Blue-yellow) Tritanomaly, Tritanopia. Idk man, no colours are safe with this one -->
+              <p><a href=""><div id="monoch" class="copy"></a></p> <!-- (Monochromacy) No such thing as colour, use cool patterns instead. -->
             </div></li>
-          <li><a href="">Mode dyslexie gentille</li> <!-- dyslexia friendly mode -->
+          <li><a href=""><div id="dix" class="copy"></div></li> <!-- dyslexia friendly mode -->
         </ul> <!-- réparer-le! -->
       </div>
-      <script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
       var language;
       function getLanguage() {
       (localStorage.getItem('language') == null) ? setLanguage('en') : false;
