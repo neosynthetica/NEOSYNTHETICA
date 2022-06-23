@@ -14,9 +14,9 @@
       .dropdown-content {
         display: none;
         position: absolute;
-        background-color: #999999;
+        background-color: rgb(39, 39, 39);
         max-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        box-shadow: 0px 8px 16px 0px rgb(39, 39, 39);
         padding: 16px 20px;
         z-index: 1; /* fix this ! */
       }
@@ -27,7 +27,6 @@
     </head>
 
     <body>
-
       <ul>
         <li><a class="translate" id="home" href="HomePage.html">Home</a></li> <!-- This will change due to the language script at the bottom. -->
         <li><a class="translate" id="collaborators" href="collaborators.html">Collaborators</a></li> <!-- And so will this. -->
@@ -35,6 +34,7 @@
       <!-- having width and height in html and css is a bad idea, so I removed it <3 -->
       <div class="content">
         <header>
+          <div class="translate copy" id="whatLanguage"></div>
         </header>
         <ul class="copy" style="list-style-type:none"> <!-- Ces sont langues théoriques ! Je n'ai pas tout de ces langues.... -->
           <li><a href="#" onclick="changeLanguage('fr')">Français</a></li>
@@ -46,16 +46,16 @@
           <li><a href="#" onclick="changeLanguage('en')">English</a></li>
         </ul> <!-- réparer-le! -->
         <header>
-          <div id="comf" class="copy"></div>
+          <div class="translate copy" id="forYourComfort"></div>
         </header>
         <ul class="copy" style="list-style-type:none">
-          <li class="dropdown"><span><div id="cb" class="copy"></div></span> <!-- colour blind mode -->
+          <li><a><div class="translate copy" id="dyslexia"></div></a></li> <!-- dyslexia friendly mode -->
+          <li class="dropdown centre"><span><div class="translate copy" id="colourBlind"></div></span> <!-- colour blind mode -->
             <div class="dropdown-content">
-              <p><a href=""><div id="RG" class="copy"></div></a></p> <!-- (Red-green) Deuteranomaly, Protanomaly, Protanopia, deuteranopia. Avoid red and green because they are useless colours here ! -->
-              <p><a href=""><div id="BY" class="copy"></a></p> <!-- (Blue-yellow) Tritanomaly, Tritanopia. Idk man, no colours are safe with this one -->
-              <p><a href=""><div id="monoch" class="copy"></a></p> <!-- (Monochromacy) No such thing as colour, use cool patterns instead. -->
+              <p><a href=""><div class="translate copy" id="red_green"></div></a></p> <!-- (Red-green) Deuteranomaly, Protanomaly, Protanopia, deuteranopia. Avoid red and green because they are useless colours here ! -->
+              <p><a href=""><div class="translate copy" id="blue_yellow"></div></a></p> <!-- (Blue-yellow) Tritanomaly, Tritanopia. Idk man, no colours are safe with this one -->
+              <p><a href=""><div class="translate copy" id="monochromacy"></div></a></p> <!-- (Monochromacy) No such thing as colour, use cool patterns instead. -->
             </div></li>
-          <li><a href=""><div id="dix" class="copy"></div></a></li> <!-- dyslexia friendly mode -->
         </ul> <!-- réparer-le! -->
       </div>
     </body>
