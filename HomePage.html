@@ -19,12 +19,15 @@ This is the HOME page, not the landing page. index.html will be the language/acc
         <img src="IMAGES/Title.gif" alt="Title Gif" class="centre">
         <p>
           She Lorem on my Ipsum
-        </p>
-        <embed class="copy" src="TEXT/en/intro.html" width="50%" height="300px"> <!-- réparer-le! -->
+        </p> <!-- réparer-le! -->
+        <p class="translate" id="intro"></p> <!-- Use class to specify it to translate, and id to specify the term (see languages.js). -->
       </div>
     </body>
     <footer>
       <a class="footerelem" href="https://github.com/neosynthetica/NEOSYNTHETICA">See this project on Github!</a> <!-- réparer-le! -->
       <a class="footerelem" href="collaborators.html">Support the team!</a>
     </footer>
+
+    <script src="languages.js"></script> <!-- Run the script at the end, when all elements exist. -->
+    
   </html>

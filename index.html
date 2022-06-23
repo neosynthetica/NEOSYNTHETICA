@@ -25,24 +25,25 @@
       }
       </style>
     </head>
+
     <body>
+
       <ul>
-        <li><a href="HomePage.html">Home</a></li>
-        <li><a href="collaborators.html">collaborators</a></li>
+        <li><a class="translate" id="home" href="HomePage.html">Home</a></li> <!-- This will change due to the language script at the bottom. -->
+        <li><a class="translate" id="collaborators" href="collaborators.html">Collaborators</a></li> <!-- And so will this. -->
       </ul> <!-- temporary navigation links, delete later -->
       <!-- having width and height in html and css is a bad idea, so I removed it <3 -->
       <div class="content">
         <header>
-          <div id="langQ" class="copy"></div>
         </header>
         <ul class="copy" style="list-style-type:none"> <!-- Ces sont langues théoriques ! Je n'ai pas tout de ces langues.... -->
-          <li><a href="#" onclick="setLanguage('fr')">Français</a></li>
+          <li><a href="#" onclick="changeLanguage('fr')">Français</a></li>
           <!--
           <li><button type="button" onclick="chinese()">汉语</button></li>
           <li><button type="button" onclick="japanese()">日本語</button></li>
           <li><button type="button" onclick="maori()">Reo Māori</button></li>
           -->
-          <li><a href="#" onclick="setLanguage(en)">English</a></li>
+          <li><a href="#" onclick="changeLanguage('en')">English</a></li>
         </ul> <!-- réparer-le! -->
         <header>
           <div id="comf" class="copy"></div>
@@ -54,28 +55,13 @@
               <p><a href=""><div id="BY" class="copy"></a></p> <!-- (Blue-yellow) Tritanomaly, Tritanopia. Idk man, no colours are safe with this one -->
               <p><a href=""><div id="monoch" class="copy"></a></p> <!-- (Monochromacy) No such thing as colour, use cool patterns instead. -->
             </div></li>
-          <li><a href=""><div id="dix" class="copy"></div></li> <!-- dyslexia friendly mode -->
+          <li><a href=""><div id="dix" class="copy"></div></a></li> <!-- dyslexia friendly mode -->
         </ul> <!-- réparer-le! -->
       </div>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-      var language;
-      function getLanguage() {
-      (localStorage.getItem('language') == null) ? setLanguage('en') : false;
-      $.ajax({
-      url:  '/language/' +  localStorage.getItem('language') + '.json',
-      dataType: 'json', async: false, dataType: 'json',
-      success: function (lang) { language = lang } });
-      }
-
-      function setLanguage(lang) {
-      localStorage.setItem('language', lang);
-
-      $(document).ready(function(){
-      $('#langQ').text(language.whatLanguage);
-      });
-      }
-      </script>
     </body>
+
+    <script src="languages.js"></script> <!-- Run the script at the end, when all elements exist. -->
+
   </html>
 <!--
 when the 'style' stylesheet has 'cbBY' in it's filename, that means it is the 'blue-yellow colourblind mode' and vice versa for 'cbRG' being red-green
