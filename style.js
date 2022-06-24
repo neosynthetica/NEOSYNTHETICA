@@ -1,3 +1,6 @@
+function makeStyle(style){
+    
+}
 // check to see what the current stylesheet is
 
 // check to see if the button has been pressed
