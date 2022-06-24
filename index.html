@@ -38,8 +38,8 @@
         </header>
         <ul class="copy" style="list-style-type:none"> <!-- Ces sont langues théoriques ! Je n'ai pas tout de ces langues.... -->
           <li><a href="#" onclick="changeLanguage('fr')">Français</a></li>
+          <li><a href="#" onclick="changeLanguage('zh')">汉语</a></li>
           <!--
-          <li><button type="button" onclick="chinese()">汉语</button></li>
           <li><button type="button" onclick="japanese()">日本語</button></li>
           <li><button type="button" onclick="maori()">Reo Māori</button></li>
           -->
@@ -49,18 +49,22 @@
           <div class="translate copy" id="forYourComfort"></div>
         </header>
         <ul class="copy" style="list-style-type:none">
-          <li><a><div class="translate copy" id="dyslexia"></div></a></li> <!-- dyslexia friendly mode -->
+          <li><button onclick="makeText('dix')"><div class="translate copy" id="dyslexia"></div></button></li> <!-- dyslexia friendly mode -->
           <li class="dropdown centre"><span><div class="translate copy" id="colourBlind"></div></span> <!-- colour blind mode -->
             <div class="dropdown-content">
-              <p><a href=""><div class="translate copy" id="red_green"></div></a></p> <!-- (Red-green) Deuteranomaly, Protanomaly, Protanopia, deuteranopia. Avoid red and green because they are useless colours here ! -->
-              <p><a href=""><div class="translate copy" id="blue_yellow"></div></a></p> <!-- (Blue-yellow) Tritanomaly, Tritanopia. Idk man, no colours are safe with this one -->
-              <p><a href=""><div class="translate copy" id="monochromacy"></div></a></p> <!-- (Monochromacy) No such thing as colour, use cool patterns instead. -->
+              <p><button onclick="makeStyle('still')"><div class="translate copy" id="red_green"></div></button></p> <!-- (Red-green) Deuteranomaly, Protanomaly, Protanopia, deuteranopia. Avoid red and green because they are useless colours here ! -->
+              <p><button onclick="makeStyle('still')"><div class="translate copy" id="blue_yellow"></div></button></p> <!-- (Blue-yellow) Tritanomaly, Tritanopia. Idk man, no colours are safe with this one -->
+              <p><button onclick="makeStyle('still')"><div class="translate copy" id="monochromacy"></div></button></p> <!-- (Monochromacy) No such thing as colour, use cool patterns instead. -->
             </div></li>
         </ul> <!-- réparer-le! -->
       </div>
     </body>
 
     <script src="languages.js"></script> <!-- Run the script at the end, when all elements exist. -->
+    <!--
+    <script src="style.js"></script>
+    <script src="text.js"></script>
+    -->
 
   </html>
 <!--
