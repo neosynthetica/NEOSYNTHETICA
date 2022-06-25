@@ -18,7 +18,10 @@ function setLanguage() {
             monochromacy : "Monochromacy",
             red_green : "Red-Green",
             whatLanguage : "What is your language?",
-            dyslexia : "Dyslexia friendly mode"
+            dyslexia : "Dyslexia friendly mode",
+            index : "index",
+            onGit : "See this project on GitHub!",
+            theTeam : "Support the team!"
         },
         fr: {
             home: "Maison",
@@ -30,8 +33,10 @@ function setLanguage() {
             monochromacy : "Monochromacie",
             red_green : "Rouge-Verte",
             whatLanguage : "Quel est votre langue ?",
-            dyslexia : "Mode dyslexie gentille"
-
+            dyslexia : "Mode dyslexie gentille",
+            index : "index",
+            onGit : "Voir ce projet à GitHub !",
+            theTeam : "Soutenir l'équipe !"
         },
         zh: {
             home: "家",
@@ -43,7 +48,10 @@ function setLanguage() {
             monochromacy : "单色的模式",
             red_green : "红-绿色",
             whatLanguage : "您的语言是什么？",
-            dyslexia : "诵读困难的模式"
+            dyslexia : "诵读困难的模式",
+            index : "索引",
+            onGit : "",
+            theTeam : ""
         }
     };
 

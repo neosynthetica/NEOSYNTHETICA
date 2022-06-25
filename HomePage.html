@@ -8,21 +8,49 @@ This is the HOME page, not the landing page. index.html will be the language/acc
       <title>NEOSYNTHETICA.COM</title>
       <link rel="stylesheet" href="style_stimple.css">
       <link rel="stylesheet" href="text_stimple.css">
+      <style>
+        .midText {
+          margin: auto;
+          width: 30%;
+          text-align: justify;
+        }
+        .footerList {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+        }
+        .footerList li {
+          display: inline;
+          float: left;
+        }
+        .footerList a {
+          display: block;
+          padding: 8px;
+          background-color: #616161;
+          color: whitesmoke;
+          text-decoration: none;
+        }
+        .footerList li :hover {
+          background-color: #414141;
+        }
+      </style>
     </head>
     <body onload="setLanguage()">
       <ul>
-        <li><a href="index.html">index</a></li>
-        <li><a href="collaborators.html">collaborators</a></li>
+        <li><a class="translate" id="index" href="index.html">index</a></li>
+        <li><a class="translate" id="collaborators" href="collaborators.html">collaborators</a></li>
       </ul>
       <!-- having width and height in html and css is a bad idea, so I removed it <3 -->
       <div class="content">
         <img src="IMAGES/Title.gif" alt="Title Gif" class="centre">
-        <p class="translate" id="intro"></p> <!-- Use class to specify it to translate, and id to specify the term (see languages.js). -->
+        <p class="translate midText" id="intro"></p> <!-- Use class to specify it to translate, and id to specify the term (see languages.js). -->
       </div>
     </body>
-    <footer>
-      <a class="footerelem" href="https://github.com/neosynthetica/NEOSYNTHETICA">See this project on Github!</a> <!-- réparer-le! -->
-      <a class="footerelem" href="collaborators.html">Support the team!</a>
+    <footer >
+      <ul class="footerList">
+        <li><a class="translate footerelem" id="onGit" href="https://github.com/neosynthetica/NEOSYNTHETICA">See this project on Github!</a></Li>
+        <li><a class="translate footerelem" id="theTeam" href="collaborators.html">Support the team!</a>
+      </ul></li>
     </footer>
 
     <script src="languages.js"></script> <!-- Run the script at the end, when all elements exist. -->

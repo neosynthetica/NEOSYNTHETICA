@@ -7,22 +7,59 @@
       <link class="style" rel="stylesheet" href="style_stimple.css">
       <link class="text" rel="stylesheet" href="text_stimple.css">
       <style>
-      .dropdown {
-        position: relative;
-        display: inline-block;
-      }
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: rgb(39, 39, 39);
-        max-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgb(39, 39, 39);
-        padding: 16px 20px;
-        z-index: 1; /* fix this ! */
-      }
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
+      <style>
+        /* Style The Dropdown Button */
+        .dropbtn {
+          display: block;
+          background-color: #b80e0e;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+        }
+
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+          position: relative;
+          display: inline-block;
+          width: 100%;
+        }
+
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #6b1616;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content p {
+          color: rgb(226, 226, 226);
+          background-color: #0e0e0e;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+          background-color: #0e0e0e;
+          color: #6b1616;
+        }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .dropdown:hover .dropbtn {
+          background-color: #ac2a25;
+        }
       </style>
     </head>
 
@@ -40,8 +77,8 @@
           <li><a href="#" onclick="changeLanguage('fr')">Français</a></li>
           <li><a href="#" onclick="changeLanguage('zh')">汉语</a></li>
           <!--
-          <li><button type="button" onclick="japanese()">日本語</button></li>
-          <li><button type="button" onclick="maori()">Reo Māori</button></li>
+          <li><a href="#" onclick="changeLanguage('ja')">日本語</button></li>
+          <li><a href="#" onclick="changeLanguage('mi')">Reo Māori</button></li>
           -->
           <li><a href="#" onclick="changeLanguage('en')">English</a></li>
         </ul> <!-- réparer-le! -->
@@ -49,13 +86,15 @@
           <div class="translate copy" id="forYourComfort"></div>
         </header>
         <ul class="copy" style="list-style-type:none">
-          <li><button onclick="makeText('dix')"><div class="translate copy" id="dyslexia"></div></button></li> <!-- dyslexia friendly mode -->
-          <li class="dropdown centre"><span><div class="translate copy" id="colourBlind"></div></span> <!-- colour blind mode -->
+          <li><a onclick="makeText('dix')"><div class="translate copy" id="dyslexia"></div></a></li> <!-- dyslexia friendly mode -->
+          <div class="dropdown">
+          <li class="dropbtn centre"><div class="translate copy" id="colourBlind"></div> <!-- colour blind mode -->
             <div class="dropdown-content">
-              <p><button onclick="makeStyle('still')"><div class="translate copy" id="red_green"></div></button></p> <!-- (Red-green) Deuteranomaly, Protanomaly, Protanopia, deuteranopia. Avoid red and green because they are useless colours here ! -->
-              <p><button onclick="makeStyle('still')"><div class="translate copy" id="blue_yellow"></div></button></p> <!-- (Blue-yellow) Tritanomaly, Tritanopia. Idk man, no colours are safe with this one -->
-              <p><button onclick="makeStyle('still')"><div class="translate copy" id="monochromacy"></div></button></p> <!-- (Monochromacy) No such thing as colour, use cool patterns instead. -->
-            </div></li>
+              <p><a href="." onclick="makeStyle('still')"><div class="translate dropdown-elem copy" id="red_green"></div></a></p> <!-- (Red-green) Deuteranomaly, Protanomaly, Protanopia, deuteranopia. Avoid red and green because they are useless colours here ! -->
+              <p><a href="." onclick="makeStyle('still')"><div class="translate dropdown-elem copy" id="blue_yellow"></div></a></p> <!-- (Blue-yellow) Tritanomaly, Tritanopia. Idk man, no colours are safe with this one -->
+              <p><a href="." onclick="makeStyle('still')"><div class="translate dropdown-elem copy" id="monochromacy"></div></a></p> <!-- (Monochromacy) No such thing as colour, use cool patterns instead. -->
+            </div></li> <!-- this dropdown list is severely fucked up, needs a good fix -->
+          </div>
         </ul> <!-- réparer-le! -->
       </div>
     </body>
