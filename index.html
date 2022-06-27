@@ -1,12 +1,11 @@
 <doctype HTML>
-  <html lang="fr" dir="ltr">
+  <html id="htmlLang" lang="fr" dir="ltr">
     <head>
       <meta charset="utf-8" name="viewport" content="width=device-width", initial-scale="1.0">
       <title>Bienvenue!</title>
       <link rel="shortcut icon" type="image/png" href="IMAGES/favicon_temp.png"> <!-- réparer-le! -->
       <link class="style" rel="stylesheet" href="style_stimple.css">
       <link class="text" rel="stylesheet" href="text_stimple.css">
-      <style>
       <style>
         /* Style The Dropdown Button */
         .dropbtn {
@@ -104,6 +103,19 @@
     <script src="style.js"></script>
     <script src="text.js"></script>
     -->
+    <script>
+      var sansHash="fr";
+      if (window.location.hash.startsWith('fr',1)=true){
+        sansHash="fr";
+      }
+      else if (window.location.hash.startsWith('zh',1)=true){
+        sansHash="zh";
+      }
+      else if (window.location.hash.startsWith('en',1)=true){
+        sansHash="en";
+      }
+      document.getElementById('htmlLang').lang=sansHash;
+    </script>
 
   </html>
 <!--
