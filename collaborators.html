@@ -23,15 +23,7 @@
     <script src="languages.js"></script>
     <script> 
       // little thingy to change the language of the page as defined by the <html> element 
-      if (window.location.hash == "#fr"){
-        sansHash="fr";
-      }
-      else if (window.location.hash == "#zh"){
-        sansHash="zh";
-      }
-      else if (window.location.hash == "#en"){
-        sansHash="en";
-      }
+      var sansHash = window.location.hash;
       document.getElementById("htmlLang").lang=sansHash;
       // add this to every page below the other js scripts
     </script> 
