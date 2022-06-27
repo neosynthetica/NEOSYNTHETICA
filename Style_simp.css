@@ -1,5 +1,8 @@
 body{
-  background-color: rgb(115, 115, 115);
+  background-image: "IMAGES/ponder.jpg";
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   height: 100%; /* this is the first height call, every other following "100%" will fit seamlessly to the body's 100%. */
 }
 .svgelem{
