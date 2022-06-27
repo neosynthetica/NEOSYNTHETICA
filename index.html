@@ -45,7 +45,7 @@
     -->
     <script> 
       // little thingy to change the language of the page as defined by the <html> element 
-      var sansHash = window.location.hash;
+      var sansHash = window.location.hash.substr(1,2);
       document.getElementById("htmlLang").lang=sansHash;
       // add this to every page below the other js scripts
     </script> 

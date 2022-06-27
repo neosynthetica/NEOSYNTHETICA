@@ -2,7 +2,7 @@
 This is the HOME page, not the landing page. index.html will be the language/accessability option page, you get here after that. THat's where you choose your language, whether you want colourblind/dyslexic friendly mode, and what style you want (stars, study, simple).
 -->
 <doctype HTML>
-  <html id="lang" lang="en" dir="ltr">
+  <html id="htmlLang" lang="en" dir="ltr">
     <head>
       <meta charset="utf-8" name="viewport" content="width=device-width", initial-scale="1.0">
       <title>NEOSYNTHETICA.COM</title>
@@ -57,7 +57,7 @@ This is the HOME page, not the landing page. index.html will be the language/acc
 
     <script> 
       // little thingy to change the language of the page as defined by the <html> element 
-      var sansHash = window.location.hash;
+      var sansHash = window.location.hash.substr(1,2);
       document.getElementById("htmlLang").lang=sansHash;
       // add this to every page below the other js scripts
     </script> 

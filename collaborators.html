@@ -1,5 +1,5 @@
 <doctype HTML>
-  <html lang="fr" dir="ltr">
+  <html id="htmlLang" lang="fr" dir="ltr">
     <head>
       <meta charset="utf-8" name="viewport" content="width=device-width", initial-scale="1.0">
       <title>My Waifus UwU</title>
@@ -23,7 +23,7 @@
     <script src="languages.js"></script>
     <script> 
       // little thingy to change the language of the page as defined by the <html> element 
-      var sansHash = window.location.hash;
+      var sansHash = window.location.hash.substr(1,2);
       document.getElementById("htmlLang").lang=sansHash;
       // add this to every page below the other js scripts
     </script> 
