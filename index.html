@@ -103,19 +103,20 @@
     <script src="style.js"></script>
     <script src="text.js"></script>
     -->
-    <script>
-      var sansHash="fr";
-      if (window.location.hash.startsWith('fr',1)=true){
+    <script> 
+      // little thingy to change the language of the page as defined by the <html> element 
+      if (window.location.hash == "#fr"){
         sansHash="fr";
       }
-      else if (window.location.hash.startsWith('zh',1)=true){
+      else if (window.location.hash == "#zh"){
         sansHash="zh";
       }
-      else if (window.location.hash.startsWith('en',1)=true){
+      else if (window.location.hash == "#en"){
         sansHash="en";
       }
-      document.getElementById('htmlLang').lang=sansHash;
-    </script>
+      document.getElementById("htmlLang").lang=sansHash;
+      // add this to every page below the other js scripts
+    </script> 
 
   </html>
 <!--
