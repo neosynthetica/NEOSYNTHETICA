@@ -7,7 +7,6 @@ This is the HOME page, not the landing page. index.html will be the language/acc
       <meta charset="utf-8" name="viewport" content="width=device-width", initial-scale="1.0">
       <title>NEOSYNTHETICA.COM</title>
       <link rel="stylesheet" href="Style_star.css">
-      <link rel="stylesheet" href="Text_simp.css">
       <style>
         .midText {
           margin: auto;
@@ -49,12 +48,20 @@ This is the HOME page, not the landing page. index.html will be the language/acc
     <footer >
       <ul class="footerList">
         <li><a class="translate footerelem" id="onGit" href="https://github.com/neosynthetica/NEOSYNTHETICA">See this project on Github!</a></Li>
-        <li><a class="translate footerelem" id="theTeam" href="collaborators.html">Support the team!</a>
-      </ul></li>
+        <li><a class="translate footerelem" id="theTeam" href="collaborators.html">Support the team!</a></li>
+      </ul>
+      <ul class="footerelem" style="list-style-type:none">
+        <li><a href="#" onclick="changeLanguage('fr')">Français</a></li>
+        <li><a href="#" onclick="changeLanguage('zh')">汉语</a></li>
+        <!--
+        <li><a href="#" onclick="changeLanguage('ja')">日本語</button></li>
+        <li><a href="#" onclick="changeLanguage('mi')">Reo Māori</button></li>
+        -->
+        <li><a href="#" onclick="changeLanguage('en')">English</a></li>
+      </ul>
     </footer>
 
     <script src="languages.js"></script> <!-- Run the script at the end, when all elements exist. -->
-    <script src="style.js"></script>
     <script> 
       // little thingy to change the language of the page as defined by the <html> element 
       var sansHash = window.location.hash.substr(1,2);

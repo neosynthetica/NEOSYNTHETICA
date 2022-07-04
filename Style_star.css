@@ -1,24 +1,64 @@
 body{
-    background-image: "IMAGES/tumblr_stars.gif";
-    background-repeat: repeat;
-    background-attachment: fixed;
-    background-size: auto;
-    height: 100%; /* this is the first height call, every other following "100%" will fit seamlessly to the body's 100%. */
-  }
-  .svgelem{
-    /* margin-left being 29%, right idea but wrong element. */
-     /* margin-left: 29%; */
-     /* margin-right: auto; */
-     display: block;
-     position: absolute;
-     z-index: 1;
-  }
-  .content{
-    height: inherit;
-  }
+  background-image: url("IMAGES/tumblr_stars.gif");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: auto;
+  height: 100%; /* this is the first height call, every other following "100%" will fit seamlessly to the body's 100%. */
+}
+.svgelem{
+  /* margin-left being 29%, right idea but wrong element. */
+  /* margin-left: 29%; */
+  /* margin-right: auto; */
+  display: block;
+  position: absolute;
+  z-index: 1;
+}
+.content{
+  height: inherit;
+}
   .centre{
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+header{
+  /* margin-top: 165px; */
+  color: white;
+  padding-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  font-family: helvetica;
+  position: relative;
+  z-index: 3;
+}
+p{
+  color: white;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: left;
+  font-family: helvetica;
+  position: relative;
+  z-index: 2;
+  border-style: none, none, none, double;
+}
+.copy{
+  color: white;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  font-family: helvetica;
+  position: relative;
+  z-index: 2;
+}
+.footerelem{
+  margin-bottom: 25px;
+  position: relative;
+}
+
   

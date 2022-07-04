@@ -3,9 +3,8 @@
     <head>
       <meta charset="utf-8" name="viewport" content="width=device-width", initial-scale="1.0">
       <title>Bienvenue!</title>
-      <link rel="shortcut icon" type="image/png" href="IMAGES/favicon_temp.png"> <!-- réparer-le! -->
+      <link rel="shortcut icon" type="image/png" href="IMAGES/wump.gif"> <!-- réparer-le! -->
       <link class="style" rel="stylesheet" href="Style_star.css">
-      <link class="text" rel="stylesheet" href="Text_simp.css">
     </head>
     <body>
       <ul>
@@ -14,35 +13,21 @@
       </ul> <!-- temporary navigation links, delete later -->
       <!-- having width and height in html and css is a bad idea, so I removed it <3 -->
       <div class="content">
-        <header>
-          <div class="translate copy" id="whatLanguage"></div>
-        </header>
-        <ul class="copy" style="list-style-type:none"> <!-- Ces sont langues théoriques ! Je n'ai pas tout de ces langues.... -->
-          <li><a href="#" onclick="changeLanguage('fr')">Français</a></li>
-          <li><a href="#" onclick="changeLanguage('zh')">汉语</a></li>
-          <!--
-          <li><a href="#" onclick="changeLanguage('ja')">日本語</button></li>
-          <li><a href="#" onclick="changeLanguage('mi')">Reo Māori</button></li>
-          -->
-          <li><a href="#" onclick="changeLanguage('en')">English</a></li>
-        </ul> <!-- réparer-le! -->
-        <header>
-          <div class="translate copy" id="forYourComfort"></div>
-        </header>
-        <ul class="copy" style="list-style-type:none">
-          <li><a onclick="makeText('dysl')"><div class="translate copy" id="dyslexia"></div></a></li> <!-- dyslexia friendly mode -->
-          <li><a href="" onclick="makeStyle('simp')"><div class="translate copy" id="colourBlind"></div></a></li> <!-- colour blind mode -->
-          </div>
-        </ul> <!-- réparer-le! -->
       </div>
     </body>
+    <footer>
+      <ul class="footerelem" style="list-style-type:none">
+        <li><a href="#" onclick="changeLanguage('fr')">Français</a></li>
+        <li><a href="#" onclick="changeLanguage('zh')">汉语</a></li>
+        <!--
+        <li><a href="#" onclick="changeLanguage('ja')">日本語</button></li>
+        <li><a href="#" onclick="changeLanguage('mi')">Reo Māori</button></li>
+        -->
+        <li><a href="#" onclick="changeLanguage('en')">English</a></li>
+      </ul>
+    </footer>
 
     <script src="languages.js"></script> <!-- Run the script at the end, when all elements exist. -->
-    
-    <script src="style.js"></script>
-    <!--
-    <script src="text.js"></script>
-    -->
     <script> 
       // little thingy to change the language of the page as defined by the <html> element 
       var sansHash = window.location.hash.substr(1,2);

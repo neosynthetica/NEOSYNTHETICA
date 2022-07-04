@@ -11,14 +11,7 @@ function setLanguage() {
         en: {
             home: "Home",
             collaborators: "Collaborators",
-            blue_yellow : "Blue-Yellow",
-            colourBlind : "Colour blind mode",
-            forYourComfort : "For your comfort:",
             intro : "Hello! My name is Claire, but most call me Claire. I am an artist of many mediums, studying my Bachelors Degree in Social Sciences at the University of Waikato, and I'm Double Majoring in Psychology and Linguistics. In my time spent outside of study, I like to hone my skills as a multimedia artist, in areas such as concept design, animation, 3D animation, 3D modelling, scene design, sound design, and scoring, I specialize in the use of Blender, the Adobe suite, and Ableton for my work. If you can't tell, I also have much experience with translation and web design! I am adept in French, Chinese, and Māori, and studying Japanese, and in my other list of languages, we have Javascript, Python, and some Lua. Please get in contact if you wish to work with me... for a price...",
-            monochromacy : "Monochromacy",
-            red_green : "Red-Green",
-            whatLanguage : "What is your language?",
-            dyslexia : "Dyslexia friendly mode",
             index : "index",
             onGit : "See this project on GitHub!",
             theTeam : "Support the team!"
@@ -26,14 +19,7 @@ function setLanguage() {
         fr: {
             home: "Maison",
             collaborators: "Collaboratrices",
-            blue_yellow : "Bleue-Jaune",
-            colourBlind : "Mode daltonienne",
-            forYourComfort : "Pour votre confort:",
             intro : "Bonjour ! Claire est mon nom, mais la plupart m'appellent Claire. Je suis une artiste de nombreux médiums, étudie mon Baccalauréat en sciences sociales à l'université de Waikato (En Nouvelle-Zélande), et je spécialise en psychologie et linguistique. Quand je ne suis étudier pas, J'aime affûter mes compétences en tant qu'artiste multimédia, comme l'arts, musique, design, et plus. J'utiliser les applis tels que Blender, le suite d'Adobe, et Ableton pour mon travail. Si vous ne saviez pas, J'aime traduction aussi. J'étudie Français (évidemment), Chinois, Maori (le saviez-vous, le mot en Maori pour 'français' est 'wīwī' ? Oui oui !), et j'étudie un petit peu de Japonais. Dans mon liste d'autres langues, j'ai Python, JavaScript, et un peu de Lua. Si vous voudrais travaillez avec moi, n'hésitez pas mettre rapport avec moi. C'est tout ! Au revoir ! À bientôt !",
-            monochromacy : "Monochromacie",
-            red_green : "Rouge-Verte",
-            whatLanguage : "Quel est votre langue ?",
-            dyslexia : "Mode dyslexie gentille",
             index : "index",
             onGit : "Voir ce projet à GitHub !",
             theTeam : "Soutenir l'équipe !"
@@ -41,14 +27,7 @@ function setLanguage() {
         zh: {
             home: "家",
             collaborators: "合作人",
-            blue_yellow : "蓝-黄色",
-            colourBlind : "色盲的模式",
-            forYourComfort : "为了您的舒适：",
             intro : "对不起。。。",
-            monochromacy : "单色的模式",
-            red_green : "红-绿色",
-            whatLanguage : "您的语言是什么？",
-            dyslexia : "诵读困难的模式",
             index : "索引",
             onGit : "",
             theTeam : ""
