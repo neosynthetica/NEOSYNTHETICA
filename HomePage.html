@@ -40,14 +40,26 @@ This is the HOME page, not the landing page. index.html will be the language/acc
         <li><a class="translate" id="collaborators" href="collaborators.html">collaborators</a></li>
       </ul>
       <!-- having width and height in html and css is a bad idea, so I removed it <3 -->
-      <div class="content"> <!-- the body, all the stuff you look at really -->
+      <div class="content row"> <!-- the body, all the stuff you look at really -->
+        <img src="IMAGES/titleGif.gif" alt="Title Gif" class="centre">
         <div class="column"> <!-- news bar, empty for now -->
+          <header>
+            THIS JUST IN: SHE LOREM ON MY IPSUM
+          </header>
+          <p class="midText">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati tenetur distinctio eius quidem debitis enim quis numquam, fugiat tempora ullam aspernatur id, iusto ad? Laborum dignissimos excepturi natus rerum laudantium?
+          </p>
         </div>
         <div class="column"> <!-- centre column, displays information -->
-        <img src="IMAGES/titleGif.gif" alt="Title Gif" class="centre">
-        <p class="translate midText" id="intro"></p> <!-- Use class to specify it to translate, and id to specify the term (see languages.js). -->
+        <p class="translate midText" id="intro">Please choose a language to view this content, dummy</p> <!-- Use class to specify it to translate, and id to specify the term (see languages.js). -->
         </div>
-        <div> <!-- right column displays links to portfolios -->
+        <div class="column"> <!-- right column displays links to portfolios -->
+          <div class="gallery">
+            <a target="_blank" href="IMAGES/art3d/siennaBuild.png">
+              <img src="IMAGES/art3d/siennaBuild.png" alt="3D model of a piano" width="400" height="200">
+            </a>
+            <div class="desc midText">3D ART PORTFOLIO</div>
+          </div>
         </div>
       </div>
     </body>

@@ -13,6 +13,23 @@ body{
   margin-right: auto;
   display: block;
 }
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: right;
+  width: 180px;
+}
+div.gallery:hover {
+  border: 1px solid #777;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+div.desc {
+  padding: 5px;
+  text-align: center;
+}
 header{
   /* margin-top: 165px; */
   color: white;
@@ -34,15 +51,12 @@ header{
 }
 p{
   color: white;
-  margin-top: 25px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 15px;
   display: block;
-  text-align: left;
+  text-align: justify;
   font-family: helvetica;
   position: relative;
   z-index: 2;
-  border-style: none, none, none, double;
 }
 .copy{
   color: white;
@@ -58,6 +72,11 @@ p{
 .column {
   float: left;
   width: 33.33%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 footer{
   display: block;
