@@ -5,18 +5,10 @@ body{
   background-size: auto;
   height: 100%; /* this is the first height call, every other following "100%" will fit seamlessly to the body's 100%. */
 }
-.svgelem{
-  /* margin-left being 29%, right idea but wrong element. */
-  /* margin-left: 29%; */
-  /* margin-right: auto; */
-  display: block;
-  position: absolute;
-  z-index: 1;
-}
 .content{
   height: inherit;
 }
-  .centre{
+.centre{
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -32,6 +24,13 @@ header{
   font-family: helvetica;
   position: relative;
   z-index: 3;
+}
+.midText{
+  background-color: rgba(51, 255, 255, 0.404);
+  display: block;
+  border: 2px solid rgb(25, 181, 181);
+  border-radius: 5px;
+  padding: 5px;
 }
 p{
   color: white;
@@ -55,6 +54,14 @@ p{
   font-family: helvetica;
   position: relative;
   z-index: 2;
+}
+.column {
+  float: left;
+  width: 33.33%;
+}
+footer{
+  display: block;
+  background-color: brown;
 }
 .footerelem{
   margin-bottom: 25px;
