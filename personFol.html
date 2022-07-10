@@ -1,0 +1,15 @@
+<doctype HTML>
+    <html id="htmlLang" lang="en" dir="ltr">
+        <head>
+            <meta charset="utf-8" name="viewport" content="width=device-width", initial-scale="1.0">
+            <title>NEOSYNTHETICA.COM</title>
+            <link rel="stylesheet" href="Style_star.css">
+        </head>
+        <script src="languages.js"></script> <!-- Run the script at the end, when all elements exist. -->
+        <script> 
+        // little thingy to change the language of the page as defined by the <html> element 
+        var sansHash = window.location.hash.substr(1,2);
+        document.getElementById("htmlLang").lang=sansHash;
+        // add this to every page below the other js scripts
+        </script> 
+    </html>

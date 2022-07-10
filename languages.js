@@ -14,7 +14,10 @@ function setLanguage() {
             intro : "Hello! My name is Claire, but most call me Claire. I am an artist of many mediums, studying my Bachelors Degree in Social Sciences at the University of Waikato, and I'm Double Majoring in Psychology and Linguistics. In my time spent outside of study, I like to hone my skills as a multimedia artist, in areas such as concept design, animation, 3D animation, 3D modelling, scene design, sound design, and scoring, I specialize in the use of Blender, the Adobe suite, and Ableton for my work. If you can't tell, I also have much experience with translation and web design! I am adept in French, Chinese, and Māori, and studying Japanese, and in my other list of languages, we have Javascript, Python, and some Lua. Please get in contact if you wish to work with me... for a price...",
             index : "index",
             onGit : "See this project on GitHub!",
-            theTeam : "Support the team!"
+            theTeam : "Support the team!",
+            blendFol : "3D ART PORTFOLIO",
+            personFol : "PERSONAL ART PORTFOLIO",
+            workFol : "PROFESSIONAL ART PORTFOLIO"
         },
         fr: {
             home: "Maison",
@@ -22,7 +25,11 @@ function setLanguage() {
             intro : "Bonjour ! Claire est mon nom, mais la plupart m'appellent Claire. Je suis une artiste de nombreux médiums, étudie mon Baccalauréat en sciences sociales à l'université de Waikato (En Nouvelle-Zélande), et je spécialise en psychologie et linguistique. Quand je ne suis étudier pas, J'aime affûter mes compétences en tant qu'artiste multimédia, comme l'arts, musique, design, et plus. J'utiliser les applis tels que Blender, le suite d'Adobe, et Ableton pour mon travail. Si vous ne saviez pas, J'aime traduction aussi. J'étudie Français (évidemment), Chinois, Maori (le saviez-vous, le mot en Maori pour 'français' est 'wīwī' ? Oui oui !), et j'étudie un petit peu de Japonais. Dans mon liste d'autres langues, j'ai Python, JavaScript, et un peu de Lua. Si vous voudrais travaillez avec moi, n'hésitez pas mettre rapport avec moi. C'est tout ! Au revoir ! À bientôt !",
             index : "index",
             onGit : "Voir ce projet à GitHub !",
-            theTeam : "Soutenir l'équipe !"
+            theTeam : "Soutenir l'équipe !",
+            blendFol : "PORTFOLIO D'ART 3D",
+            personFol : "PORTFOLIO D'ART PERSONNEL",
+            workFol : "PORTFOLIO D'ART PROFESSIONNEL"
+
         },
         zh: {
             home: "家",

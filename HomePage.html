@@ -46,19 +46,31 @@ This is the HOME page, not the landing page. index.html will be the language/acc
           <header>
             THIS JUST IN: SHE LOREM ON MY IPSUM
           </header>
-          <p class="midText">
+          <p class="midText copy teal">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati tenetur distinctio eius quidem debitis enim quis numquam, fugiat tempora ullam aspernatur id, iusto ad? Laborum dignissimos excepturi natus rerum laudantium?
           </p>
         </div>
         <div class="column"> <!-- centre column, displays information -->
-        <p class="translate midText" id="intro">Please choose a language to view this content, dummy</p> <!-- Use class to specify it to translate, and id to specify the term (see languages.js). -->
+        <p class="translate midText copy teal" id="intro">Please choose a language to view this content, dummy</p> <!-- Use class to specify it to translate, and id to specify the term (see languages.js). -->
         </div>
         <div class="column"> <!-- right column displays links to portfolios -->
-          <div class="gallery">
-            <a target="_blank" href="IMAGES/art3d/siennaBuild.png">
-              <img src="IMAGES/art3d/siennaBuild.png" alt="3D model of a piano" width="400" height="200">
+          <div class="gallery redPink">
+            <a href="blendFol.html">
+              <img src="IMAGES/art3d/siennaBuild.png" alt="3D model of a piano" width="600" height="600">
             </a>
-            <div class="desc midText">3D ART PORTFOLIO</div>
+            <div class="translate desc copy" id="blendFol">3D ART PORTFOLIO</div>
+          </div>
+          <div class="gallery redPink">
+            <a href="personFol.html">
+              <img src="IMAGES/artPersonal/mereoleonaPrint.png" alt="sexc animu grill" width="600" height="600">
+            </a>
+            <div class="translate desc copy" id="personFol">PERSONAL ART PORTFOLIO</div>
+          </div>
+          <div class="gallery redPink">
+            <a href="workFol.html">
+              <img src="IMAGES/artWork/theHurricane_wm.jpg" alt="big dragon boy" width="600" height="600">
+            </a>
+            <div class="translate desc copy" id="workFol">PROFESSIONAL ART PORTFOLIO</div>
           </div>
         </div>
       </div>
@@ -85,6 +97,5 @@ This is the HOME page, not the landing page. index.html will be the language/acc
       var sansHash = window.location.hash.substr(1,2);
       document.getElementById("htmlLang").lang=sansHash;
       // add this to every page below the other js scripts
-    </script> 
-
+    </script>
   </html>

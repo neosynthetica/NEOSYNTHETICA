@@ -15,16 +15,24 @@ body{
 }
 div.gallery {
   margin: 5px;
-  border: 1px solid #ccc;
-  float: right;
-  width: 180px;
+  border: 1px solid rgb(255, 0, 102);
+  float: left;
+  width: 300px;
 }
 div.gallery:hover {
-  border: 1px solid #777;
+  border: 1px solid rgb(104, 0, 49);
 }
 div.gallery img {
   width: 100%;
-  height: auto;
+  height: 300px;
+  object-fit: cover;
+  object-position: 50% 0%;
+  filter: blur(0px);
+}
+div.gallery img:hover {
+  filter: blur(5px);
+  transition: 0.5s;
+  transition-timing-function: ease-in-out;
 }
 div.desc {
   padding: 5px;
@@ -43,20 +51,27 @@ header{
   z-index: 3;
 }
 .midText{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: fit-content;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.teal{
   background-color: rgba(51, 255, 255, 0.404);
   display: block;
   border: 2px solid rgb(25, 181, 181);
   border-radius: 5px;
   padding: 5px;
 }
-p{
-  color: white;
-  margin-top: 15px;
+.redPink{
+  background-color: rgba(255, 0, 68, 0.404);
   display: block;
-  text-align: justify;
-  font-family: helvetica;
-  position: relative;
-  z-index: 2;
+  border: 2px solid rgb(204, 0, 95);
+  border-radius: 5px;
+  padding: 5px;
 }
 .copy{
   color: white;
@@ -71,7 +86,9 @@ p{
 }
 .column {
   float: left;
-  width: 33.33%;
+  width: 30.33%;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 .row:after {
   content: "";
@@ -80,6 +97,7 @@ p{
 }
 footer{
   display: block;
+  margin: auto;
   background-color: brown;
 }
 .footerelem{
