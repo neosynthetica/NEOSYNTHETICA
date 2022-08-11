@@ -18,6 +18,7 @@ div.gallery {
   border: 1px solid rgb(255, 0, 102);
   float: left;
   width: 300px;
+  position: static;
 }
 div.gallery img {
   width: 100%;
@@ -92,6 +93,12 @@ header{
 .column {
   float: left;
   width: 48%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+.folColumn {
+  float: left;
+  width: 30.33%;
   margin-left: 1%;
   margin-right: 1%;
 }
