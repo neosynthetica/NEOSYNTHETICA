@@ -1,6 +1,3 @@
-<!-- SOME NOTES:
-This is the HOME page, not the landing page. index.html will be the language/accessability option page, you get here after that. THat's where you choose your language, whether you want colourblind/dyslexic friendly mode, and what style you want (stars, study, simple).
--->
 <doctype HTML>
   <html id="htmlLang" lang="en" dir="ltr">
     <head>
@@ -33,21 +30,21 @@ This is the HOME page, not the landing page. index.html will be the language/acc
         <li><a class="translate" id="collaborators" href="collaborators.html">collaborators</a></li>
       </ul>
       <!-- having width and height in html and css is a bad idea, so I removed it <3 -->
-      <div class="content row"> <!-- the body, all the stuff you look at really -->
+      <div class="content"> <!-- the body, all the stuff you look at really -->
         <img src="IMAGES/titleGif.gif" alt="Title Gif" class="centre">
-        <div>
-          <div class="column"> <!-- news bar, empty for now -->
-            <header>
-              THIS JUST IN: SHE LOREM ON MY IPSUM
-            </header>
-            <p class="midText copy lightOrange">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati tenetur distinctio eius quidem debitis enim quis numquam, fugiat tempora ullam aspernatur id, iusto ad? Laborum dignissimos excepturi natus rerum laudantium?
-            </p>
-          </div>
-        </div>
-        <div class="column"> <!-- centre column, displays information -->
-        <p class="translate midText copy teal" id="intro">Please choose a language to view this content, dummy</p> <!-- Use class to specify it to translate, and id to specify the term (see languages.js). -->
-        </div>
+        <div class="row">
+			<div class="column"> <!-- news bar, empty for now -->
+				<header>
+				  THIS JUST IN: SHE LOREM ON MY IPSUM
+				</header>
+				<p class="midText copy lightOrange">
+				  Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati tenetur distinctio eius quidem debitis enim quis numquam, fugiat tempora ullam aspernatur id, iusto ad? Laborum dignissimos excepturi natus rerum laudantium?
+				</p>
+			</div>
+			<div class="column"> <!-- centre column, displays information -->
+			<p class="translate midText copy teal column" id="intro">Please choose a language to view this content, dummy</p> <!-- Use class to specify it to translate, and id to specify the term (see languages.js). -->
+			</div>
+		</div>
         <div class="row"> <!-- right column displays links to portfolios -->
           <div class="gallery redPink folColumn">
             <a href="blendFol.html">
