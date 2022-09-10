@@ -111,6 +111,7 @@ footer{
   display: block;
   margin: auto;
   background-color: brown;
+  align-self: baseline;
 }
 .footerelem{
   margin-bottom: 25px;
