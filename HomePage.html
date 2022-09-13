@@ -4,25 +4,6 @@
       <meta charset="utf-8" name="viewport" content="width=device-width", initial-scale="1.0">
       <title>NEOSYNTHETICA.COM</title>
       <link rel="stylesheet" href="Style_star.css">
-      <style>
-        .footerList {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-        }
-        .footerList li {
-          float: left;
-        }
-        .footerList a {
-          display: block;
-          padding: 8px;
-          color: whitesmoke;
-          text-decoration: none;
-        }
-        .footerList li :hover {
-          color: #9e9e9e;
-        }
-      </style>
     </head>
     <body onload="setLanguage()">
       <ul>
@@ -34,37 +15,17 @@
         <img src="IMAGES/titleGif.gif" alt="Title Gif" class="centre">
         <div class="row">
 			<div class="column"> <!-- news bar, empty for now -->
-				<header>
-				  THIS JUST IN: SHE LOREM ON MY IPSUM
+				<header class="leftText">
+				  ABOUT_THE_ARTIST:
 				</header>
-				<p class="midText copy lightOrange">
+				<p class="leftText copy teal" id="intro">
 				  Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati tenetur distinctio eius quidem debitis enim quis numquam, fugiat tempora ullam aspernatur id, iusto ad? Laborum dignissimos excepturi natus rerum laudantium?
-				</p>
+				</p><!-- Use class to specify it to translate, and id to specify the term (see languages.js). -->
 			</div>
-			<div class="column"> <!-- centre column, displays information -->
-			<p class="translate midText copy teal" id="intro">Please choose a language to view this content, dummy</p> <!-- Use class to specify it to translate, and id to specify the term (see languages.js). -->
+			<div class="column teal"> <!-- right column, displays portfolio scroll -->
+			
 			</div>
 		</div>
-        <div class="row"> <!-- right column displays links to portfolios -->
-          <div class="gallery redPink folColumn">
-            <a href="blendFol.html">
-              <img src="IMAGES/art3d/siennaBuild.png" alt="3D model of a piano" width="600" height="600">
-            </a>
-            <div class="translate desc copy teal" id="blendFol"><b>3D ART PORTFOLIO</b></div>
-          </div>
-          <div class="gallery redPink folColumn">
-            <a href="personFol.html">
-              <img src="IMAGES/artPersonal/mereoleonaPrint.png" alt="sexc animu grill" width="600" height="600">
-            </a>
-            <div class="translate desc copy teal" id="personFol"><b>PERSONAL ART PORTFOLIO</b></div>
-          </div>
-          <div class="gallery redPink folColumn">
-            <a href="workFol.html">
-              <img src="IMAGES/artWork/theHurricane_wm.jpg" alt="big dragon boy" width="600" height="600">
-            </a>
-            <div class="translate desc copy teal" id="workFol"><b>PROFESSIONAL ART PORTFOLIO</b></div>
-          </div>
-        </div>
       </div>
     </body>
     <footer>
