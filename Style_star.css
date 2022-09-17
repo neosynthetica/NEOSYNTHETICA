@@ -60,7 +60,7 @@ header{
 }
 .leftText{
   display: block;
-  margin-left: 5px;
+  margin-left: 0px;
   margin-right: auto;
   text-align: left;
   width: fit-content;
@@ -104,21 +104,26 @@ header{
   width: 48%;
   margin-left: 1%;
   margin-right: 1%;
+  height: auto;
 }
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
+.bigBox {
+  width: 542px;
+  height: 314px;
+}
+.imgPortfol {
+  height: auto;
+  width: auto;
+  object-fit: cover;
+}
 footer{
   display: block;
   margin: auto;
-  background-color: brown;
   align-self: baseline;
-}
-.footerelem{
-  margin-bottom: 25px;
-  position: relative;
 }
 footerList {
   list-style-type: none;
@@ -127,9 +132,7 @@ footerList {
 }
 footerList li {
   float: left;
-  }
-footerList a {
-  display: block;
+  display: inline;
   padding: 8px;
   color: whitesmoke;
   text-decoration: none;
@@ -139,3 +142,6 @@ footerList li :hover {
 }
 
   
+.footerList {
+	
+}
