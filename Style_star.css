@@ -113,31 +113,32 @@ header{
 }
 .bigBox {
   width: 542px;
-  height: 314px;
+  height: 235px;
 }
 .imgPortfol {
-  height: auto;
-  width: auto;
+  height: inherit;
+  width: 542px;
   object-fit: cover;
+  object-position: center;
 }
 footer{
   display: block;
-  margin: auto;
+  margin: 10px;
   align-self: baseline;
 }
 footerList {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 1px;
+  padding: 1px;
+  display: inline;
+  float: left;
 }
 footerList li {
-  float: left;
-  display: inline;
   padding: 8px;
   color: whitesmoke;
   text-decoration: none;
 }
-footerList li :hover {
+footerList li:hover {
   color: #9e9e9e;
 }
 
