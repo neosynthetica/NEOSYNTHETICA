@@ -139,12 +139,14 @@ footer ul {
   list-style-type: none;
   margin: 1px;
   padding: 1px;
-  display: inline-block;
+  
   float: left;
   overflow: hidden;
 }
 footer li {
+  display: inline-block;
   width: auto;
+  margin-left: 3px;
 }
 footer li a {
   color: whitesmoke;
