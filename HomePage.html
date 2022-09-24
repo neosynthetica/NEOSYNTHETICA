@@ -6,7 +6,7 @@
       <link rel="stylesheet" href="Style_star.css">
     </head>
     <body onload="setLanguage()">
-      <ul>
+      <ul style="position: relative">
         <li><a class="translate" id="index" href="index.html">index</a></li>
         <li><a class="translate" id="collaborators" href="collaborators.html">collaborators</a></li>
       </ul>
@@ -14,7 +14,7 @@
       <div class="content"> <!-- the body, all the stuff you look at really -->
         <img src="IMAGES/titleGif.gif" alt="Title Gif" class="centre">
         <div class="row">
-			<div class="column bigBox"> <!-- news bar, empty for now -->
+			<div class="column1"> <!-- news bar, empty for now -->
 				<header class="leftText">
 				  ABOUT_THE_ARTIST:
 				</header>
@@ -22,11 +22,24 @@
 				  Hello! My name is Claire, but most call me Claire. I am an artist of many mediums, studying my Bachelors Degree in Social Sciences at the University of Waikato, and I'm Double Majoring in Psychology and Linguistics. In my time spent outside of study, I like to hone my skills as a multimedia artist, in areas such as concept design, animation, 3D animation, 3D modelling, scene design, sound design, and scoring, I specialize in the use of Blender, the Adobe suite, and Ableton for my work. If you can't tell, I also have much experience with translation and web design! I am adept in French, Chinese, and Māori, and studying Japanese, and in my other list of languages, we have Javascript, Python, and some Lua. Please get in contact if you wish to work with me... for a price...
 				</p><!-- Use class to specify it to translate, and id to specify the term (see languages.js). -->
 			</div>
-				<div class="column bigBox"> <!-- right column, displays portfolio scroll -->
+				<div class="column2"> <!-- right column, displays portfolio scroll -->
 					<header class="leftText">
 					  VIEW_PORTFOLIOS:
 					</header>
-					<img src="IMAGES/artWork/theHurricane_wm.jpg" alt="Smaug Painting" class="imgPortfol teal">
+          <div class="teal">
+          <div class="gallery">
+            <a href="workFol.html"><img src="IMAGES/artWork/theHurricane_wm.jpg" alt="Smaug Painting"></a>
+            <div class="desc"><a href="workFol.html">PROFESSIONAL FOLIOS</a></div>
+          </div>
+          <div class="gallery">
+            <a href="personFol.html"><img src="IMAGES/artPersonal/mereoleonaPrint.png" alt="Anime pinup"></a>
+            <div class="desc"><a href="personFol.html">PERSONAL FOLIOS</a></div>
+          </div>
+          <div class="gallery">
+            <a href="blendFol.html"><img src="IMAGES/art3d/yaspin.gif" alt="Pink guitar render"></a>
+<div class="desc"><a href="blendFol.html">OTHER FOLIOS</a></div>
+          </div>
+          </div>
 				</div>
 			</div>
 		</div>
