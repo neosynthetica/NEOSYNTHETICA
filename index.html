@@ -3,7 +3,7 @@
     <head>
       <meta charset="utf-8" name="viewport" content="width=device-width", initial-scale="1.0">
       <title>Bienvenue!</title>
-      <link rel="shortcut icon" type="image/png" href="IMAGES/wump.gif"> <!-- réparer-le! -->
+      <link rel="shortcut icon" type="image/png" href="IMAGES/assets/wump.gif"> <!-- réparer-le! -->
       <link class="style" rel="stylesheet" href="Style_star.css">
     </head>
     <body>
@@ -13,20 +13,18 @@
       </ul> <!-- temporary navigation links, delete later -->
       <!-- having width and height in html and css is a bad idea, so I removed it <3 -->
       <div class="content">
-      </div>
+        <img src="IMAGES/assets/wump.gif" alt="Title Gif but tiny" class="centre">
+        <div class="row">
+          <div class="tightCol">
+            <!-- French button -->
+            <a class="frenchButton" href="#" onclick="changeLanguage('fr')">Français</a>
+            <!-- English button -->
+            <a class="englishButton" href="#" onclick="changeLanguage('en')">English</a>
+            <!-- Chinese button -->
+            <a class="chineseButton" href="#" onclick="changeLanguage('zh')">汉语</a>
+          </div>
+        </div>
     </body>
-    <footer>
-      <ul class="footerelem" style="list-style-type:none">
-        <li><a href="#" onclick="changeLanguage('fr')">Français</a></li>
-        <li><a href="#" onclick="changeLanguage('zh')">汉语</a></li>
-        <!--
-        <li><a href="#" onclick="changeLanguage('ja')">日本語</button></li>
-        <li><a href="#" onclick="changeLanguage('mi')">Reo Māori</button></li>
-        -->
-        <li><a href="#" onclick="changeLanguage('en')">English</a></li>
-      </ul>
-    </footer>
-
     <script src="languages.js"></script> <!-- Run the script at the end, when all elements exist. -->
     <script> 
       // little thingy to change the language of the page as defined by the <html> element 
@@ -34,5 +32,4 @@
       document.getElementById("htmlLang").lang=sansHash;
       // add this to every page below the other js scripts
     </script> 
-
   </html>

@@ -1,5 +1,5 @@
 body{
-  background-image: url("IMAGES/tumblr_stars.gif");
+  background-image: url("IMAGES/assets/tumblr_stars.gif");
   background-repeat: repeat;
   background-attachment: fixed;
   background-size: auto;
@@ -16,9 +16,8 @@ body{
 }
 div.gallery {
   margin: 1px;
-  border: 1px solid rgb(25, 181, 181);
   float: left;
-  width: 32%;
+  width: 33%;
   position: static;
   display: inline;
 }
@@ -125,10 +124,57 @@ header{
   margin-right: 1%;
   height: auto;
 }
+.tripleCol {
+  float: left;
+  width: 30%;
+  margin-left: 20px;
+  margin-right: 1%;
+  height: auto;
+}
+.tightCol {
+  float: left;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  display: block;
+}
 .row:after {
   content: "";
   display: table;
   clear: both;
+}
+.frenchButton {
+  border-radius: 25px;
+  background: url("IMAGES/assets/frFlag.png");
+  background-size: cover;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+  margin: 10px;
+  color: black;
+  text-decoration: none;
+}
+.englishButton {
+  border-radius: 25px;
+  background: url("IMAGES/assets/enFlag.png");
+  background-size: cover;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+  color: black;
+  text-decoration: none;
+}
+.chineseButton {
+  border-radius: 25px;
+  background: url("IMAGES/assets/zhFlag.jpeg");
+  background-size: cover;
+  background-position: left top; /* chinese flag has detail in top left so align it as such */
+  padding: 20px;
+  width: 200px;
+  height: 150px;
+  color: black;
+  text-decoration: none;
 }
 footer{
   display: block;

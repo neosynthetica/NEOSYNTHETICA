@@ -26,9 +26,9 @@ function setLanguage() {
             index : "index",
             onGit : "Voir ce projet à GitHub !",
             theTeam : "Soutenir l'équipe !",
-            blendFol : "PORTFOLIO D'ART 3D",
-            personFol : "PORTFOLIO D'ART PERSONNEL",
-            workFol : "PORTFOLIO D'ART PROFESSIONNEL"
+            blendFol : "PORTFOLIOS D'ART AUTRES",
+            personFol : "PORTFOLIOS D'ART PERSONNELS",
+            workFol : "PORTFOLIOS D'ART PROFESSIONNELS"
 
         },
         zh: {
