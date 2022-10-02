@@ -134,8 +134,9 @@ header{
 .tightCol {
   float: left;
   width: 50%;
-  margin-left: auto;
+  margin-left: 35%;
   margin-right: auto;
+  margin-top: 70px;
   height: auto;
   display: block;
 }
