@@ -69,24 +69,49 @@ header{
   padding-left: 10px;
   padding-right: 10px;
 }
-.leftText{
-  display: block;
-  margin-left: 0px;
-  margin-right: 0px;
-  text-align: left;
-  width: fit-content;
-  padding-left: 5px;
-  padding-right: 5px;
-  word-wrap: break-word;
-  overflow: auto;
+
+.copy{
+  color: white;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline;
+  text-align: justify;
+  font-family: helvetica;
+  position: relative;
+  z-index: 2;
+}
+.portraitRow {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+@media screen and (max-width: 700px) {
+  .copy {
+    width: 1fr;
+    text-align: center;
+  }
+}
+.copy header {
+  margin: 0px;
 }
 .inlinePortrait {
-  display: block;
-  width: 200px;
-  height: 200px;
+  display: inline;
+  width: 100%;
+  height: 100%;
   float: right;
   object-fit: cover;
-  object-position: top;
+  object-position: center;
+  border-radius: 0px 5px 5px 0px;
+}
+@media screen and (max-width: 700px) {
+  .portraitRow {
+    grid-template-columns: 1fr;
+  }
+  .inlinePortrait{
+    float:none;
+    width: 100%;
+    border-radius: 0px 0px 5px 5px;
+  }
 }
 .teal{
   background-color: rgba(51, 255, 255, 0.404);
@@ -94,7 +119,7 @@ header{
   border: 2px solid rgb(25, 181, 181);
   border-radius: 5px;
   padding: 5px;
-}
+} 
 .redPink{
   background-color: rgba(255, 0, 68, 0.404);
   display: block;
@@ -109,17 +134,7 @@ header{
   border-radius: 5px;
   padding: 5px;
 }
-.copy{
-  color: white;
-  margin-top: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  text-align: left;
-  font-family: helvetica;
-  position: relative;
-  z-index: 2;
-}
+
 .column1 {
   float: left;
   width: 31%;
@@ -224,19 +239,25 @@ footer{
 
 .rowMummy {
   height: 100%;
+  margin-left: auto;
+  margin-right: auto;
   width: 90%;
   display: grid;
   grid-template-rows: 2fr 1fr;
+  align-self: center;
 }
-.rowMummy::after {
+.rowMummy:after {
   content: "";
   clear: both;
   display: table;
 }
+.homeRow {
+  width: 100%
+}
 @media screen and (max-width: 700px) {
   .rowMummy {
     grid-template-columns: 1fr;
-    width: 50%;
+    width: 65%;
   }
 }
 footer ul {
