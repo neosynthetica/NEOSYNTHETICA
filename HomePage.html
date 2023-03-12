@@ -2,13 +2,13 @@
   <html id="htmlLang" lang="en" dir="ltr">
     <head>
       <meta charset="utf-8" name="viewport" content="width=device-width", initial-scale="1.0">
+      <link rel="shortcut icon" type="image/png" href="IMAGES/assets/wump.gif"> <!-- réparer-le! -->
       <title>NEOSYNTHETICA.COM</title>
       <link rel="stylesheet" href="Style_star.css">
     </head>
     <body onload="setLanguage()">
       <ul style="position: relative">
         <li><a class="translate" id="index" href="index.html">index</a></li>
-        <li><a class="translate" id="collaborators" href="collaborators.html">collaborators</a></li>
       </ul>
       <!-- having width and height in html and css is a bad idea, so I removed it <3 -->
       <div class="content"> <!-- the body, all the stuff you look at really -->
@@ -16,7 +16,7 @@
       <div class="rowMummy">
         <div class="homeRow"> 
           <div class="portrait">
-          <header class="translate leftText" id="about">
+          <header class="translate copy" id="about">
             ABOUT_THE_ARTIST:
           </header>
           <div class="teal">
@@ -32,12 +32,15 @@
 					<header class="translate copy" id="viewFolio">
 					  VIEW_PORTFOLIOS:
 					</header>
-          <div class="teal">
+          <div class="teal homeGallery">
           <div class="gallery">
-            <a href="workFol.html">Photofol</a>
+            <a href="workFol.html" class="photofolButton"></a><p>PHOTOFOLIO</p>
           </div>
           <div class="gallery">
-            <a href="personFol.html" class="artfolButton">ARTFOLIO</a>
+            <a href="personFol.html" class="artfolButton"></a><p>ARTFOLIO</p>
+          </div>
+          <div class="gallery">
+            <a href="personFol.html" class="sonfolButton"></a><p>SONFOLIO</p>
           </div>
           </div>
 				</div>
