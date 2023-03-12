@@ -192,6 +192,11 @@ header{
   display: table;
   clear: both;
 }
+.artfolButton {
+  background-image: url("IMAGES/ARTFOLIO23/Clairebear1.png");
+  width: 100%;
+  
+}
 .frenchButton {
   border-radius: 25px;
   background: url("IMAGES/assets/frFlag.png");
