@@ -13,7 +13,7 @@ body{
   margin-right: auto;
   display: block;
   position: relative;
-  width: 100%;
+  width: fit-content;
 }
 div.homeGallery {
   position: relative;
