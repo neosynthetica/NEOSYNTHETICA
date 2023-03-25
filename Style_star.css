@@ -6,14 +6,19 @@ body{
   height: 100%; /* this is the first height call, every other following "100%" will fit seamlessly to the body's 100%. */
 }
 .content{
-  height: 100%;
+  height: fit-content;
+}
+.wump {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: fit-content;
 }
 .centre{
   margin-left: auto;
   margin-right: auto;
   display: block;
-  position: relative;
-  width: fit-content;
+  width: 75%;
 }
 div.homeGallery {
   position: relative;
@@ -51,7 +56,7 @@ div.gallery p {
   pointer-events: none;
 }
 .artfolButton {
-  background: url("IMAGES/ARTFOLIO23/Clairebear1.png");
+  background: url("artfol/IMAGES/ARTFOLIO23/Clairebear1.png");
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -67,7 +72,7 @@ div.gallery p {
   transition-timing-function: linear;
 }
 .sonfolButton {
-  background: url("IMAGES/ARTFOLIO21/YASFUNK.png");
+  background: url("artfol/IMAGES/ARTFOLIO21/YASFUNK.png");
   display: block;
   width: 100%;
   background-size: cover;
@@ -84,7 +89,7 @@ div.gallery p {
   transition-timing-function: linear;
 }
 .photofolButton {
-  background: url("IMAGES/PHOTOFOLIO21/DSC06418.jpg");
+  background: url("photofol/IMAGES/PHOTOFOLIO21/DSC06418.jpg");
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -271,34 +276,24 @@ header.copy {
   margin: 10px;
   text-decoration: none;
 }
-footer{
-  display: block;
-  padding: 5px;
-  margin: 10px;
-  position: fixed;
-  bottom: 1%;
-  left: 1%;
-  background-color: rgba(0,0,0,0.5);
-  border-radius: 5px;
-}
-
 .rowMummy {
   height: 100%;
   margin-left: auto;
   margin-right: auto;
   width: 90%;
+  position: relative;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 2fr 1fr;
   align-self: center;
 }
-.rowMummy:after {
+.homeRow {
+  width: 100%
+}
+.homeRow:after {
   content: "";
   clear: both;
   display: table;
-}
-.homeRow {
-  width: 100%
 }
 @media screen and (max-width: 700px) {
   .rowMummy {
@@ -306,23 +301,42 @@ footer{
     width: 65%;
   }
 }
+/* everything below here confuses me plz halp ??
+The footer doesn't seem to want to align itself at the bottom and I have no idea why. I think the solution is laughing at my face*/
+footer{
+  display: inline-block;
+  position: relative;
+  height: 15%;
+  width: 100%;
+  background-color: rgba(0,0,0,1);
+}
 footer ul {
+  display: flex;
+  flex-direction: row;
   list-style-type: none;
   margin: 1px;
   padding: 1px;
-  
-  float: left;
-  overflow: hidden;
+  justify-self: baseline;
 }
-footer li {
-  display: inline-block;
+footer ul li {
+  cursor: pointer;
   width: auto;
   margin-left: 3px;
 }
-footer li a {
+footer ul li a, .dropMum {
   color: whitesmoke;
   text-decoration: none;
 }
-footer li a:hover {
+footer ul li a:hover {
   color: #9e9e9e;
+}
+/* the goal is to be able to hover dropMum and have the language options (dropup) slide out into the list, like they're hidden behind the dropMum */
+li.dropMum {
+  cursor: default;
+}
+li.dropup {
+  display: none;
+}
+.dropMum:hover .dropup {
+  display: inline;
 }
