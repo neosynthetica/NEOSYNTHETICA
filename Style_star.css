@@ -6,7 +6,7 @@ body{
   height: 100%; /* this is the first height call, every other following "100%" will fit seamlessly to the body's 100%. */
 }
 .content{
-  height: fit-content;
+  height: max-content;
 }
 .wump {
   margin-left: auto;
@@ -304,39 +304,30 @@ header.copy {
 /* everything below here confuses me plz halp ??
 The footer doesn't seem to want to align itself at the bottom and I have no idea why. I think the solution is laughing at my face*/
 footer{
-  display: inline-block;
-  position: relative;
-  height: 15%;
+  display: block;
+  position: fixed;
+  bottom: 0%;
+  left: 0%;
+  height: fit-content;
   width: 100%;
-  background-color: rgba(0,0,0,1);
+  background-color: rgba(0, 0, 0, 0.502);
 }
 footer ul {
-  display: flex;
-  flex-direction: row;
+  display: inline;
   list-style-type: none;
-  margin: 1px;
-  padding: 1px;
-  justify-self: baseline;
+  margin: 0px;
+  padding: 0px;
 }
 footer ul li {
+  display: inline;
   cursor: pointer;
-  width: auto;
+  width: 90%;
   margin-left: 3px;
 }
-footer ul li a, .dropMum {
+footer ul li a{
   color: whitesmoke;
   text-decoration: none;
 }
 footer ul li a:hover {
   color: #9e9e9e;
-}
-/* the goal is to be able to hover dropMum and have the language options (dropup) slide out into the list, like they're hidden behind the dropMum */
-li.dropMum {
-  cursor: default;
-}
-li.dropup {
-  display: none;
-}
-.dropMum:hover .dropup {
-  display: inline;
 }

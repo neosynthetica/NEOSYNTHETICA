@@ -11,7 +11,7 @@
         <li><a class="translate" id="index" href="index.html">index</a></li>
       </ul>
       <!-- having width and height in html and css is a bad idea, so I removed it <3 -->
-      <div class="content"> <!-- the body, all the stuff you look at really -->
+  <div class="content"> <!-- the body, all the stuff you look at really -->
         <img src="IMAGES/assets/titleGif.gif" alt="Title Gif" class="centre">
         <div class="rowMummy">
           <div class="homeRow"> 
@@ -45,7 +45,6 @@
             </div>
           </div>
         </div>
-        </div>
       </div>
     </body>
     <footer>
@@ -53,17 +52,16 @@
         <li><a class="translate" id="onGit" href="https://github.com/neosynthetica/NEOSYNTHETICA"></a></li>
         <li><a class="translate" id="theTeam" href="collaborators.html"></a></li>
         <!-- Languages and external links in same list because that's easier-->
-        <li class="dropMum"><a>Language</a></li>
-        <li class="dropup"><a href="#" onclick="changeLanguage('fr')">Français</a></li>
-        <li class="dropup"><a href="#"   onclick="changeLanguage('zh')">汉语</a></li>
+        <li><a href="#" onclick="changeLanguage('fr')">Français</a></li>
+        <li><a href="#" onclick="changeLanguage('zh')">汉语</a></li>
         <!--
-        <li class="dropup"><a href="#" onclick="changeLanguage('ja')">日本語</button></li>
-        <li class="dropup"><a href="#"  onclick="changeLanguage('mi')">Reo Māori</button></li>
+        <li><a href="#" onclick="changeLanguage('ja')">日本語</button></li>
+        <li><a href="#" onclick="changeLanguage('mi')">Reo Māori</button></li>
         -->
-        <li class="dropup"><a href="#"  onclick="changeLanguage('en')">English</a></li>
+        <li><a href="#" onclick="changeLanguage('en')">English</a></li>
       </ul>
     </footer>
-
+  </div>
     <script src="languages.js"></script> <!-- Run the script at the end, when all elements exist. -->
     <script> 
       // little thingy to change the language of the page as defined by the <html> element 
