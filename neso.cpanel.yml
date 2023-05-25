@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/neosynth/public_html/
-    - /GitHub/ -R neosynthetica $DEPLOYPATH
+    - /GitHub/neosynthetica -R $DEPLOYPATH
