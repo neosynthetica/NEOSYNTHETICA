@@ -3,25 +3,25 @@
     <head>
       <meta charset="utf-8" name="viewport" content="width=device-width", initial-scale="1.0">
       <title>Bienvenue!</title>
-      <link rel="shortcut icon" type="image/png" href="IMAGES/assets/wump.gif"> <!-- réparer-le! -->
-      <link class="style" rel="stylesheet" href="Style_star.css">
+      <link rel="shortcut icon" type="image/png" href="/IMAGES/assets/wump.gif"> <!-- réparer-le! -->
+      <link class="style" rel="stylesheet" href="/Style_star.css">
     </head>
     <body>
       <!-- having width and height in html and css is a bad idea, so I removed it <3 -->
       <div class="content">
-        <img src="IMAGES/assets/wump.gif" alt="Title Gif but tiny" class="wump">
+        <img src="/IMAGES/assets/wump.gif" alt="Title Gif but tiny" class="wump">
         <div>
           <div class="tightCol button">
             <!-- French button -->
-            <a class="frenchButton" href="homepage.html#fr" onclick="changeLanguage('fr')"><p>Français</p></a>
+            <a class="frenchButton" href="/homepage.html#fr" onclick="changeLanguage('fr')"><p>Français</p></a>
             <!-- English button -->
-            <a class="englishButton" href="homepage.html#en" onclick="changeLanguage('en')"><p>English</p></a>
+            <a class="englishButton" href="/homepage.html#en" onclick="changeLanguage('en')"><p>English</p></a>
             <!-- Chinese button -->
-            <a class="chineseButton" href="homepage.html#zh" onclick="changeLanguage('zh')"><p>汉语</p></a>
+            <a class="chineseButton" href="/homepage.html#zh" onclick="changeLanguage('zh')"><p>汉语</p></a>
           </div>
         </div>
     </body>
-    <script src="languages.js"></script> <!-- Run the script at the end, when all elements exist. -->
+    <script src="/languages.js"></script> <!-- Run the script at the end, when all elements exist. -->
     <script> 
       // little thingy to change the language of the page as defined by the <html> element 
       var sansHash = window.location.hash.substr(1,2);
